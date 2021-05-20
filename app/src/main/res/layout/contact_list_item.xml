@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         app:layout_constraintTop_toTopOf="@id/nameTv"
         app:layout_constraintStart_toStartOf="@id/nameTv"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="25dp"
         tools:text="08184282252"
         android:layout_height="wrap_content"/>
 

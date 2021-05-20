@@ -9,7 +9,7 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() 
     // list of contacts
     private val contacts = mutableListOf<Contact>()
 
-    fun setUpContacts(contact: List<Contact>){
+    fun setUpContacts(contacts: List<Contact>){
         this.contacts.addAll(contacts)
         notifyDataSetChanged()
     }
