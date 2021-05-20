@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setUpData(binding)
     }
 
-    fun setUpData(binding: ActivityMainBinding){
+    private fun setUpData(binding: ActivityMainBinding) {
         binding.contactsRV.adapter = adapter
         val builder = AlertDialog.Builder(this)
         val inflater = this.layoutInflater
@@ -28,10 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         val name = view.findViewById<TextView>(R.id.nameEt)
         val no = view.findViewById<TextView>(R.id.numberEt)
-        val saveBtn = view.findViewById<Button>(R.id.saveBt)
-        no.addTextChangedListener(object:TextWatcher{
+        val saveBtn = view.findViewById<TextView>(R.id.saveBt)
+
+        no.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                TODO("Not yet implemented")
+
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         val alertDialog = builder.create()
-        saveBtn.setOnClickListener{
+        saveBtn.setOnClickListener {
             val contact = Contact(name.text.toString(), no.text.toString())
             val contacts = mutableListOf(contact)
             adapter.setUpContacts(contacts)
@@ -52,10 +53,9 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.fab.setOnClickListener{
+        binding.fab.setOnClickListener {
             alertDialog.show();
         }
-
 
 
     }

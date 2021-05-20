@@ -11,6 +11,7 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() 
 
     fun setUpContacts(contact: List<Contact>){
         this.contacts.addAll(contacts)
+        notifyDataSetChanged()
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
         return ContactViewHolder(
