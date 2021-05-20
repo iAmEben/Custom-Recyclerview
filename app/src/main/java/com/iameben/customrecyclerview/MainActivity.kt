@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
 
         val alertDialog = builder.create()
 
+        binding.fab.setOnClickListener{
+            alertDialog.show();
+        }
+
+
 
     }
 }
