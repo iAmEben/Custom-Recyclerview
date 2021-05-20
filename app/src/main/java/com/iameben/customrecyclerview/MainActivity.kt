@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.DividerItemDecoration
 import com.iameben.customrecyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpData(binding: ActivityMainBinding) {
         binding.contactsRV.adapter = adapter
+        binding.contactsRV.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
         val builder = AlertDialog.Builder(this)
         val inflater = this.layoutInflater
         val view = layoutInflater.inflate(R.layout.add_contact_dialog, null)
