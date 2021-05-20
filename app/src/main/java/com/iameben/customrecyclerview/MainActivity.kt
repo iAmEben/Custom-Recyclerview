@@ -2,6 +2,8 @@ package com.iameben.customrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -27,8 +29,28 @@ class MainActivity : AppCompatActivity() {
         val name = view.findViewById<TextView>(R.id.nameEt)
         val no = view.findViewById<TextView>(R.id.numberEt)
         val saveBtn = view.findViewById<Button>(R.id.saveBt)
+        no.addTextChangedListener(object:TextWatcher{
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                saveBtn.isEnabled = p0?.length == 11
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+
+            }
+        })
 
         val alertDialog = builder.create()
+        saveBtn.setOnClickListener{
+            val contact = Contact(name.text.toString(), no.text.toString())
+            val contacts = mutableListOf(contact)
+            adapter.setUpContacts(contacts)
+            alertDialog.dismiss()
+
+        }
 
         binding.fab.setOnClickListener{
             alertDialog.show();
