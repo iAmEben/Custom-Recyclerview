@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpData(binding: ActivityMainBinding) {
         binding.contactsRV.adapter = adapter
-        binding.contactsRV.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
         val builder = AlertDialog.Builder(this)
         val inflater = this.layoutInflater
         val view = layoutInflater.inflate(R.layout.add_contact_dialog, null)
