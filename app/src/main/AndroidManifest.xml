@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomRecyclerview">
-        <activity android:name=".FriendsContactActivity"></activity>
-        <activity android:name=".FamilyContactActivity" />
-        <activity android:name=".FavouriteContactActivity" />
-        <activity android:name=".AllContactActivity" />
+        <activity
+            android:name=".FriendsContactActivity"
+            android:label="@string/friends_contacts" />
+        <activity android:name=".FamilyContactActivity"
+            android:label="@string/family_contacts"/>
+        <activity android:name=".FavouriteContactActivity"
+            android:label="@string/favourite_contacts"/>
+        <activity android:name=".AllContactActivity"
+            android:label="@string/all_contacts"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".CategoryActivity" />
         <activity android:name=".LoginActiivity" />
