@@ -28,7 +28,7 @@
             <TextView
                 android:id="@+id/loginTv"
                 android:layout_width="match_parent"
-                android:text="signup"
+                android:text="sign up"
                 android:textSize="45dp"
                 android:textColor="@color/paleVioletRed"
                 android:textAllCaps="true"
@@ -45,7 +45,7 @@
                 android:layout_marginEnd="10dp"
                 android:hint="Email"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="50dp">
+                android:layout_height="60dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:layout_marginEnd="10dp"
                 android:hint="Password"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="50dp">
+                android:layout_height="60dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -78,20 +78,32 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/loginBt"
+                    android:id="@+id/signup"
                     android:layout_width="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:text="login"
+                    android:layout_marginStart="85dp"
+                    android:text="create account"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="5dp"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/or_signinTv"
+                    android:id="@+id/or_loginTv"
                     android:layout_width="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:text="Have an account? login"
-                    android:layout_marginStart="64dp"
+                    android:text="Have an account?"
+                    android:layout_marginStart="85dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/login2Tv"
+                    android:layout_width="wrap_content"
+                    android:text="Login"
+                    android:onClick="onClick"
+                    android:textStyle="bold"
+                    android:textColor="@color/paleVioletRed"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/or_loginTv"
                     android:layout_height="wrap_content"/>
 
             </RelativeLayout>
