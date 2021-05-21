@@ -10,6 +10,6 @@
 
     //........................
     <color name="paleVioletRed">#DB7093</color>
-    <color name="lightPink">#FFB6C1</color>
-    <color name="MediumVioletRed">#C71585</color>
+    <color name="hotPink">#FF69B4</color>
+    <color name="mediumVioletRed">#C71585</color>
 </resources>

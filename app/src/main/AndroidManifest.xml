@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomRecyclerview">
-        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CategoryActivity" />
         <activity android:name=".LoginActiivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

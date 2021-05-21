@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActiivity">
+    tools:context=".SignupActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
@@ -12,7 +12,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_height="350dp">
+        android:layout_height="380dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             <TextView
                 android:id="@+id/loginTv"
                 android:layout_width="match_parent"
-                android:text="Login"
+                android:text="signup"
                 android:textSize="45dp"
                 android:textColor="@color/paleVioletRed"
                 android:textAllCaps="true"
@@ -72,14 +72,29 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/loginBt"
-                android:layout_width="wrap_content"
-                android:layout_marginStart="100dp"
-                android:text="login"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginBt"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="login"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/or_signinTv"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Have an account? login"
+                    android:layout_marginStart="64dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
 
         </LinearLayout>
 
