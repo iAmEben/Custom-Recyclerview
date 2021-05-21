@@ -21,7 +21,7 @@
 
             <ImageView
                 android:layout_width="60dp"
-                android:src="@drawable/group"
+                android:src="@drawable/locksmith"
                 android:layout_marginStart="120dp"
                 android:layout_height="60dp"/>
 
